@@ -140,10 +140,15 @@ class _ChatPageState extends State<ChatPage> {
           ),
         ),
         // send
-        IconButton(
-          onPressed: sendMessage,
-          icon: const Icon(
-            Icons.arrow_upward,
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.green
+          ),
+          child: IconButton(
+            onPressed: sendMessage,
+            icon: const Icon(
+              Icons.arrow_upward,
+            ),
           ),
         )
       ],
